@@ -17,4 +17,7 @@ var builder = services
 var startup =
     builder.GetRequiredService<Startup>();
 
-startup.Run();
+await startup.RunAsync();
+
+Console.WriteLine("\n\nPress any key to continue...");
+Console.ReadKey();
